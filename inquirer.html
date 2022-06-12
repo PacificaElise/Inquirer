@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Опросник</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons.flaticon.com/png/512/2173/premium/2173478.png?token=exp=1643370908~hmac=fed640d220c8c32b7a4e62c31a35534d"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="littlepets.png" width="150" height="150" alt="logo" />
+    </header>
+    <form name="input" action="#" method="post">
+      <h3>Добро пожаловать!</h3>
+      <div>
+        Ответьте, пожалуйста, на несколько вопросов. Это не займёт много
+        времени.
+      </div>
+      <br />
+      <div>
+        <label for="name">Кличка питомца</label>
+        <input type="text" id="name" placeholder="Укажите имя пушистика:)" />
+      </div>
+      <br />
+      <div>
+        <label for="fio">Имя владельца*</label>
+        <input type="text" id="fio" required />
+      </div>
+      <br />
+      <div>
+        <fieldset>
+          <legend>Ваши контактные данные</legend>
+          <label for="phone">Номер мобильного телефона*</label>
+          <input
+            type="tel"
+            id="phone"
+            placeholder="+375"
+            minlength="13"
+            required
+          />
+          <p>Адрес:</p>
+          <label for="city">Город</label>
+          <input type="text" id="city" />
+          <label for="street">Улица</label>
+          <input type="text" id="street" />
+          <label for="house">Номер дома</label>
+          <input type="tel" id="house" />
+          <label for="flat">Номер квартиры</label>
+          <input type="tel" id="flat" /> <br />
+          <br />
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Ваш электронный адрес" />
+        </fieldset>
+      </div>
+      <br />
+      <div>
+        <label for="breed"><i>Порода питомца*</i></label>
+        <select id="breed" required>
+          <option></option>
+          <option value="option1">Мейн-Кун</option>
+          <option value="option2">Сиамская</option>
+          <option value="option3">Британская короткошерстная</option>
+          <option value="option4">Абиссинская</option>
+          <option value="option5">Персидская</option>
+          <option value="option6">Манчкин</option>
+          <option value="option7">Донской сфинкс</option>
+          <option value="option8">Девон рекс</option>
+          <option value="option9">Бенгальская</option>
+          <option value="option10">Русская голубая</option>
+        </select>
+      </div>
+      <br />
+      <div class="checkbox-group">
+        <label for="food">Чем питается ваш питомец?*</label>
+        <input type="checkbox" name="food" id="food" value="dry" />Сухой корм
+
+        <input type="checkbox" name="food2" id="food2" value="wet" />Влажный
+        корм
+        <input
+          type="checkbox"
+          name="food3"
+          id="food3"
+          value="natur"
+        />Натуральный корм
+      </div>
+      <div>
+        <br />
+        <label for="sex">Укажите пол питомца</label>
+        <input type="radio" name="sex" id="sex" value="male" />Самец
+        <label for="sex2"></label>
+        <input type="radio" name="sex" id="sex2" value="female" />Самка
+      </div>
+      <br />
+      <div>
+        <textarea name="comments" cols="50" rows="10">
+Оставьте ваш комментарий</textarea
+        >
+      </div>
+      <br />
+      <div>
+        <label for="photo">Добавьте фото питомца</label>
+        <input type="file" id="photo" />
+      </div>
+      <br />
+      <div>
+        <input type="submit" value="Сохранить" />
+      </div>
+    </form>
+    <br />
+    <div><b>* Поле обязательно для заполнения</b></div>
+    <br />
+  </body>
+</html>
